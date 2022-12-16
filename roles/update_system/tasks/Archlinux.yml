@@ -1,5 +1,4 @@
 - name: Upgrade all packages (Arch Linux based systems)
   community.general.pacman:
-    name: "*"
-    state: latest
-    update_cache: yes
+    update_cache: true
+    upgrade: true
