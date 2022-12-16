@@ -1,0 +1,5 @@
+- name: Upgrade all packages (Debian based systems)
+  ansible.builtin.apt:
+    name: "*"
+    state: latest
+    update_cache: yes
